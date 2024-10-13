@@ -1,0 +1,224 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 72rem;
+    margin: auto;
+    font-family: 'Rokkitt', serif;
+    line-height: 1.5;
+    display: grid;
+    grid-template-areas:
+    "topmenu topmenu"
+    "header header"
+    "main main";
+    border: 1px solid;
+    color: white;
+    
+    
+    background-image: url("images/Navani\'s\ Prayer.jpg");
+    background-position: unsets;
+    background-size: cover;
+    background-size: 150%;
+    background-attachment: fixed;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.video {
+    width: 100%;
+    height: 16rem;
+}
+
+.topmenu {
+    grid-area: topmenu;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.topmenu a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+    background-color: rgba(150, 4, 4, 0.315);
+}
+
+
+a:link {
+    color: cadetblue;
+}
+
+a:visited {
+    color: rgb(65, 107, 109);
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+a:active {
+    color: aquamarine;
+}
+
+.icon {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+}
+
+.button a {
+    color: white;
+}
+
+header {
+    text-align: center;
+    grid-area: header;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+
+header p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+main {
+    grid-area: main;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+}
+
+footer {
+    padding: 1rem;
+    grid-area: footer;
+}
+
+footer a {
+    font-size: 1.5rem;
+}
+
+footer a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: darkgoldenrod;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+a:active {
+    color: darkkhaki;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+nav a {
+    text-align: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    flex-grow: 1;
+}
+
+.map {
+
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 37.5rem) {
+
+    .video {
+        width: 100%;
+        height: 32rem;
+    }
+
+    body {
+        background-size: 100%;
+    }
+    nav {
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 60rem) {
+
+    .topmenu{
+        flex-direction: row;
+    }
+
+    body {
+        background-size: 150%;
+        background-image: url("images/Stormlight_Shallan_Full.jpg");
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .video {
+        width: 100%;
+        height: 12.5rem;
+    }
+}
+
+
+@media screen and (min-width:72rem) {
+
+    body{
+        background-size: 100%;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+}
