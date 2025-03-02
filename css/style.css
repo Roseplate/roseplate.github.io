@@ -375,22 +375,6 @@ input[type="submit"] {
     right: 1rem;
 }
 
-
-.youtube {
-    background-color: red;
-}
-
-.instagram {
-    background: linear-gradient(to top, yellow 0%, red 50%, magenta 100%);
-}
-
-.tiktok {
-    background-color: black;
-}
-
-
-
-
 .icon {
     font-size: 1rem;
     display: inline-block;
@@ -808,4 +792,16 @@ nav img {
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+.youtube {
+    background-color: red;
+}
+
+.instagram {
+    background: linear-gradient(to top, yellow 0%, red 50%, magenta 100%);
+}
+
+.tiktok {
+    background-color: black;
 }
