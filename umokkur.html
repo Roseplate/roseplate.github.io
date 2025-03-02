@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/colours.css">
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/skraning.css">
+</head>
+
+
+<body>
+    <!--Navigation-->
+    <section>
+        <input type="checkbox" id="toggle">
+        <label class="navcontrol" for="toggle">≡</label>
+        <nav>
+            <a href="index.html" class="icon-cosmere"></a>
+            <a href="umokkur.html" class="text">About us</a>
+            <a href="skraning.html" class="text">Sign up</a>
+            <a href="umvoruna.html" class="text">About Cosmere RPG</a>
+        </nav>
+    </section>
+
+    <header class="slidecontainer">
+
+            <div id="slideset1">
+                <section>
+                    <h1>The Team</h1>
+                    <p>
+                        The Team is one organized by Brotherwise Games.<br>
+                        Being known well for they're unique and fun games like Boss Monster and Call to Adventure as well as having worked with Dragonsteel before made them the obvious choice to partner with. <br>
+                    </p>
+                    <p>While there are more, we'll be going over game designers and illustrators, who are the biggest part of the team.</p>
+                </section>
+                <section>
+                    <h1>Game Designers</h1>
+                    <p>A big part of the design team are the game designers. Dedicated to making the game feel good and enjoyable to play.</p>
+                </section>
+                <section>
+                    <h1>Illustrators</h1>
+                    <p>Another part of the design team are the Illustrators, who fill the books with spectacular art and give the players a good idea of what the world is like.</p>
+                </section>
+            </div>
+
+    </header>
+
+    <section class="spacedown">
+        <p>Check out our socials!</p>
+        <div class="col-3">
+            <div class="center">
+                <a href="https://www.instagram.com/cosmererpg/" class="button instagram">Instagram</a>
+            </div>
+            <div class="center">
+                <a href="https://www.tiktok.com/@brotherwisegames" class="button tiktok">Tiktok</a>
+            </div>
+            <div class="center">
+                <a href="https://www.youtube.com/playlist?list=PLnp7dXN5ZwVl14duQ2eRJ18YuqGYBAK7L" class="button youtube">Youtube</a>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+    <!--POPUP FORM-->
+  <section class="popupform">
+    
+    <input type="checkbox" id="formToggle">
+    <label class= "toggle button" for="formToggle">Send us a message!</label>
+    
+    
+    <section class="formmenu">
+      <form action="redirects/redirectMSG.html">
+        <fieldset>
+          <label>Chatbox</label><br>
+          <label>Name:</label><br>
+          <input type="text" id="formname" required placeholder="Full Name">
+          <br>
+          <label>Email:</label><br>
+          <input type="email" id="formemail" required placeholder="Email">
+          <br>
+          <label>Message:</label> <br>
+          <textarea id="formskilabod" name="skilaboð" placeholder="Send us a message!" required></textarea>
+          <br>
+          <div class = "formdiv">
+            <input type="submit" value="Send" class="button">
+          </div>
+        </fieldset>
+        
+      </form>
+    </section>
+  </section>
+    
+</body>
+</html>

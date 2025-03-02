@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/colours.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/skraning.css">
+</head>
+
+
+<body>
+    <!--Navigation-->
+    <section>
+        <input type="checkbox" id="toggle">
+        <label class="navcontrol" for="toggle">≡</label>
+        <nav>
+            <a href="index.html" class="icon-cosmere"></a>
+            <a href="umokkur.html" class="text">About us</a>
+            <a href="skraning.html" class="text">Sign up</a>
+            <a href="umvoruna.html" class="text">About Cosmere RPG</a>
+        </nav>
+    </section>
+
+    <form action="redirects/redirectSU.html">
+        <fieldset>
+  
+            <legend>Sign up for the playtest</legend>
+            <label>Name:</label><br>
+            <input type="text" id="name" required placeholder="Full Name">
+            <br>
+            <label>Email:</label><br>
+            <input type="email" id="email" required placeholder="Email">
+            
+            <div>  
+                <label>Phone:</label><br>
+                <input type="tel" id="tel" required placeholder="Phone Number">
+            </div>
+
+                <div>
+                    <label>Options:</label> <br>
+                    <select name="Val">
+                        <option value="Val1" selected>Player</option>
+                        <option value="Val2">Gamemaster</option>
+                        <option value="Val3">Neither</option>
+                    </select>
+                </div>
+                
+    
+            <label>Other:</label> <br>
+            <textarea id="athugasemd" name="athugasemd" placeholder="Anything we should know?"></textarea>
+            <br>
+    
+            <input type="checkbox" required> <!--Já, þetta er nauðsynlegt að fylla út. P.s: þetta er bókakarakter, ekki alvöru manneskja. Bara svo það sé á hreinu.-->
+            <label>Storm Moash.</label>
+            <br>
+            <a href="redirects/redirectSU.html">
+              <input class="button" type="submit" value="Submit">
+            </a>
+        </fieldset>
+      </form>
+    
+</body>
+</html>

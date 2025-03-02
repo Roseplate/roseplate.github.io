@@ -1,0 +1,141 @@
+body {
+    font-family: var(--cr-font);
+    color: var(--cr-gold);
+    background-color: var(--cr-background);
+    max-width: 65rem;
+    margin: auto;
+    font-size: larger;
+    text-align: justify;
+}
+
+.homeheader {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: var(--cr-offwhite);
+    border: 4px solid var(--cr-gold);
+    border-radius: 2rem;
+    padding-left: 1rem;
+}
+
+.homeheader h1 {
+    margin: 0;
+    font-size: 8rem;
+    text-align: center;
+    padding-top: 0.4rem;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+p a {
+    color: var(--cr-gold);
+    text-decoration: none;
+    font-style: italic;
+}
+
+p a:hover {
+    color: var(--cr-lifelight);
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.button {
+    text-align: center;
+    background-color: var(--cr-gold);
+    color: var(--cr-white-text);
+    text-decoration: none;
+    font-size: large;
+    border-radius: 2rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+.button:hover {
+    background-color: var(--cr-lifelight);
+}
+
+.spacedown {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.back {
+    background-color: var(--cr-complication);
+}
+
+.continue {
+    background-color: var(--cr-opportunity);
+}
+
+caption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width:70rem) {
+    body {
+        max-width: 90vw;
+    }
+
+    .homeheader h1 {
+        font-size: 10vw;
+        padding-top: 1vw;
+    }
+}
+
+@media screen and (max-width: 36rem) {
+    .col-3 {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 56rem) {
+
+}
